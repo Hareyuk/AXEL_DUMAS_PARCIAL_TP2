@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App Frontend</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <div class="bgVideo">
+            <video loop muted autoplay >
+            <source src="/video/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <div class="overvideo">
+
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <diV class="boxContent">
+                <h1>Ingreso de números</h1>
+            
+                <div class="line"></div>
+                
+                <form action="/api/numeros/entrada" method="post">
+                    <label>Número</label>
+                    <input type="number" name="numero">
+                    <button class="mt0_5">Enviar</button>
+                </form>
+
+                <div class="line"></div>
+
+                <form action="/api/numeros/entrada" method="get">
+                    <button>Obtener todos los números</button>
+                </form>
+
+                <div class="line"></div>
+
+                <form action="/api/numeros/minmax" method="get">
+                    <button>Obtener el máximo y el mínimo</button>
+                </form>
+
+                <div class="line"></div>
+
+                <form action="/api/numeros/promedio" method="get">
+                    <button>Obtener el promedio de los números</button>
+                </form>
+
+                <div class="line"></div>
+
+                <form action="/api/numeros/cantidad" method="get">
+                    <button>Obtener cantidad</button>
+                </form>
+            </diV>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

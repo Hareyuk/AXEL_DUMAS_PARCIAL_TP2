@@ -1,0 +1,115 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Saira", sans-serif;
+}
+
+
+h1
+{
+    font-size: 2em;
+}
+
+main
+{
+    position: relative;
+    color: white;
+}
+
+.bgVideo
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.overvideo
+{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.68);
+    z-index: 1;
+}
+
+.contenedor
+{
+    z-index: 10;
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.boxContent
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    gap: 1em;
+    padding: 2em;
+    background-color: #74f3d359;
+    border-radius: 1em;
+}
+
+form
+{
+    width: 100%;
+    display: block;
+}
+
+form button
+{
+    display: block;
+    width: 100%;
+    padding: 0.8em 0.3em;
+    background-color: #9effdfe7;
+    font-size: 1.1em;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+form button:hover
+{
+    background-color: transparent;
+    color: #9effdf;
+    border-color: #9effdf;
+}
+
+div.line
+{
+    border-bottom: #9effdf 1px solid;
+    width: 50%;
+}
+
+form label
+{
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+
+form input
+{
+    padding: 0.2em 0.3em;
+}
+
+.mt0_5
+{
+    margin-top: 0.5em;
+}
